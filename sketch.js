@@ -1,6 +1,7 @@
 p5.disableFriendlyErrors = true;
 // 
 function setup() {
+  frameRate(30);
   img = []; q = 200; s = 16, scl = 32;
   cvSiz = createVector(1024,768);
   createCanvas( cvSiz.x, cvSiz.y, WEBGL ).id("mc");
@@ -33,7 +34,7 @@ function draw(f = frameCount) {
     for(j=320/s;j--;){
       r=map(sin(noise(i/q,j/q+cos(f/q)*1.6,f/q)*100),-1,1,32,96);
       img[2].noStroke();
-      img[2].fill(40,r,40);
+      img[2].fill(0x40,r,0x60);
       img[2].rect(i*s,j*s,s,s);
     }   
   }
