@@ -2,15 +2,14 @@ p5.disableFriendlyErrors = true;
 // 
 function setup() {
   frameRate(30);
-  img = []; q = 200; s = 16, scl = 32;
   cvSiz = createVector(1024,768);
+  img = [], q = 200; s = 16, scl = 32, grille = [cvSiz.x / scl, cvSiz.y / scl ];
   createCanvas( cvSiz.x, cvSiz.y, WEBGL ).id("mc");
-  var grid = [cvSiz.x / scl, cvSiz.y / scl ];
   noiseDetail(4,.5);
   for ( i=2; i--; ) 
     img.push( createGraphics(cvSiz.x, cvSiz.y) );
-  for ( y = 0; y < grid[1]; y++ ) {
-    for ( x = 0; x < grid[0]; x++ ) {
+  for ( y = 0; y < grille[1]; y++ ) {
+    for ( x = 0; x < grille[0]; x++ ) {
       img[0].noStroke();
       img[0].fill( ((x+y)%2)?"#604060":"#404060" );
       img[0].rect( x *scl, y * scl, scl );
