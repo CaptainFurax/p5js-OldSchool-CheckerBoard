@@ -1,2 +1,10 @@
 # p5js-OldSchool-CheckerBoard
 p5.js => Ol'Skool CheckerBoard + Boreal Plasma
+
++ Checkerboard's trick -> scrolled texture
++ WEBLGL Canvas, 30fps.
++ Port from 'Old School Demo' Style memories.
++ Responsive : Resize & Fit on 4/3 to optimize available space
++ [.oO° Online Demo °Oo.](https://captainfurax.github.io/p5js-OldSchool-CheckerBoard/)
+
+![Ol'Skool](https://github.com/CaptainFurax/p5js-OldSchool-CheckerBoard/blob/main/CPT2204072003-1229x922.png)
