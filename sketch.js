@@ -1,6 +1,7 @@
 p5.disableFriendlyErrors = true;
 // 
 function setup() {
+  pixelDensity(1);
   frameRate(30);
   cvSiz = createVector(1024,768);
   img = [], q = 200; s = 16, scl = 32, grille = [cvSiz.x / scl, cvSiz.y / scl ];
